@@ -17,10 +17,14 @@ function App() {
     <div className="pt-6">
       <div className="mx-6">
         <Stepper step={step} />
-        <SelectService
-          selectedService={selectedService}
-          setSelectedService={setSelectedService}
-        />
+        {step === 1 ? (
+          <SelectService
+            selectedService={selectedService}
+            setSelectedService={setSelectedService}
+          />
+        ) : (
+          <></>
+        )}
       </div>
       <ButtonGroup
         step={step}
