@@ -19,7 +19,10 @@ module.exports = {
     extend: {
       colors: {
         stepper: "#1AAE9F",
-        stepperBackground: "#D8DEE3",
+        lightGray: "#F2F5F7",
+        mediumGray: "#788896",
+        darkGray: "#4B5C6B",
+        buttonBackground: "#788896",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

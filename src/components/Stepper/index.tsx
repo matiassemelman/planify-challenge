@@ -1,6 +1,4 @@
-interface StepperProps {
-  step: number;
-}
+import { StepperProps } from "@/types";
 
 export const Stepper = ({ step }: StepperProps) => {
   const backgroundWidth =
@@ -9,7 +7,7 @@ export const Stepper = ({ step }: StepperProps) => {
   return (
     <div>
       <h4>Seleccionar servicio</h4>
-      <div className="w-[90%] h-5 bg-stepperBackground">
+      <div className="w-full h-5 bg-lightGray">
         <div className={`bg-stepper h-5 ${backgroundWidth}`}></div>
       </div>
     </div>
