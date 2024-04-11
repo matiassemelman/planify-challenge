@@ -9,6 +9,7 @@ export interface ButtonGroupProps {
   step: number;
   setStep: React.Dispatch<React.SetStateAction<number>>;
   selectedService: Service | null;
+  selectedSlot: string | null;
 }
 
 export interface HandleClickProps {
@@ -21,4 +22,9 @@ export interface SelectServiceProps {
 }
 export interface StepperProps {
   step: number;
+}
+
+export interface SummaryProps {
+  selectedService: Service | null;
+  selectedSlot: string | null;
 }

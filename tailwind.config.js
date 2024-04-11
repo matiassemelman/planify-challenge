@@ -20,8 +20,9 @@ module.exports = {
       colors: {
         stepper: "#1AAE9F",
         lightGray: "#F2F5F7",
-        mediumGray: "#788896",
+        mediumGray: "#C3CFD9",
         darkGray: "#4B5C6B",
+        textDarkGray: "#3F4D59",
         buttonBackground: "#788896",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

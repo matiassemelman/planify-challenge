@@ -1,30 +1,11 @@
-# React + TypeScript + Vite
+# Planify Challenge - Semelman Matias
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Posibilidad de mejora del challenge
 
-Currently, two official plugins are available:
+![alt text](image.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Más allá de ser un challenge y de que estoy construyendo esta solución basado en los datos que se nos dan, propondria para hacerlo más real que el json de slots:
 
-## Expanding the ESLint configuration
+![alt text](image-1.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+estuviese separado en un array de fechas, con sus respectivos horarios. De esta forma, se podría mockear pero mucho mas fiel a lo que seria una respuesta real de la API.

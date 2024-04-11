@@ -5,11 +5,12 @@ export const ButtonGroup = ({
   step,
   setStep,
   selectedService,
+  selectedSlot,
 }: ButtonGroupProps) => {
   const handleClick =
     ({ action }: HandleClickProps) =>
     () => {
-      if (action === "next") {
+      if (action === "next" && step < 3) {
         setStep((prevStep) => prevStep + 1);
       } else if (action === "prev") {
         setStep((prevStep) => prevStep - 1);
@@ -39,14 +40,40 @@ export const ButtonGroup = ({
               Anterior
             </Button>
             <Button
-              onClick={handleClick({ action: "next" })}
-              className="bg-darkGray"
+              onClick={() => {
+                if (selectedSlot !== null) {
+                  handleClick({ action: "next" })();
+                }
+              }}
+              className={`${
+                selectedSlot === null ? "bg-mediumGray" : "bg-darkGray"
+              } focus:bg-mediumGray`}
             >
               Siguiente
             </Button>
           </>
         ) : (
-          <></>
+          step === 3 && (
+            <>
+              <Button
+                onClick={handleClick({ action: "prev" })}
+                className="bg-[#788896]"
+              >
+                Anterior
+              </Button>
+              <Button
+                onClick={() => {
+                  if (selectedSlot !== null) {
+                    handleClick({ action: "next" })();
+                  }
+                }}
+                className="bg-darkGray"
+              >
+                Confirmar
+              </Button>
+              : <></>
+            </>
+          )
         )}
       </div>
     </div>
