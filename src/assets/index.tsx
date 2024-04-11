@@ -7,7 +7,7 @@ export const PlusIcon = ({ classNames }: { classNames: string }) => {
       viewBox="0 0 32 32"
       width="512"
       height="512"
-      className={`${classNames} fill-mediumGray mr-[-10px] mt-[10px]`}
+      className={`${classNames} fill-[#788896] mr-[-10px] mt-[10px]`}
     >
       <polygon points="50 10.5 13.5 10.5 13.5 6 10.5 6 10.5 10.5 6 10.5 6 13.5 10.5 13.5 10.5 18 13.5 18 13.5 13.5 18 13.5 18 10.5" />
     </svg>
@@ -24,7 +24,7 @@ export const MinusIcon = ({ classNames }: { classNames: string }) => {
         x="0px"
         y="0px"
         viewBox="0 0 512 512"
-        className={`${classNames} fill-mediumGray`}
+        className={`${classNames} fill-[#788896]`}
         width="512"
         height="512"
       >

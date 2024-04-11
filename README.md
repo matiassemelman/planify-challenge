@@ -1,30 +1,49 @@
-# React + TypeScript + Vite
+# Planify Challenge - Semelman Matias
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una solución al desafío Planify. Se trata de una aplicación que permite seleccionar un servicio y una franja horaria para ese servicio.
 
-Currently, two official plugins are available:
+## Requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Para ejecutar este proyecto, necesitarás tener instalado Node.js y npm. Puedes descargarlos desde [aquí](https://nodejs.org/).
 
-## Expanding the ESLint configuration
+## Instalación
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Para instalar las dependencias del proyecto, ejecuta el siguiente comando en la raíz del proyecto:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```sh
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Ejecución
+
+Para ejecutar el proyecto en modo de desarrollo, usa el siguiente comando:
+
+```sh
+npm run dev
+```
+
+Esto iniciará el servidor de desarrollo y podrás ver la aplicación en http://localhost:5000.
+
+## Construcción
+
+Para construir el proyecto para producción, usa el siguiente comando:
+
+```sh
+npm run build
+```
+
+Esto creará una versión optimizada de la aplicación en la carpeta dist.
+
+## Pruebas
+
+Actualmente, este proyecto no tiene pruebas automatizadas.
+
+## Detalles relevantes
+
+- Este proyecto utiliza React y TypeScript.
+- Los datos de los servicios y las franjas horarias se cargan desde archivos JSON en la carpeta data.
+- La aplicación consta de varios componentes, incluyendo un componente de acordeón para seleccionar el servicio y un componente de grupo de botones para navegar entre los pasos.
+
+## Posibilidad de mejora del challenge
+
+Más allá de ser un challenge y de que estoy construyendo esta solución basado en los datos que se nos dan, propondría para hacerlo más real que el json de slots estuviese separado en un array de fechas, con sus respectivos horarios. De esta forma, se podría mockear pero mucho más fiel a lo que sería una respuesta real de la API.
